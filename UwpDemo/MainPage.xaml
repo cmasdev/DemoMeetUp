@@ -7,18 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.Resources>
-        <local:LigaLista x:Key="MyList" />
-        <Style TargetType="StackPanel">
-            <Setter Property="Margin" Value="10,0,10,0"/>
-        </Style>
-        <Style TargetType="ListBox">
-            <Setter Property="Height" Value="100"/>
-        </Style>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="12"/>
-        </Style>
-    </Page.Resources>
 
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <ListView x:Name="ligasListView" ItemsSource="{x:Bind ViewModel}">
