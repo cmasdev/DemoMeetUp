@@ -25,8 +25,6 @@ namespace UwpDemo
         public MainPage()
         {
             this.InitializeComponent();
-            this.ViewModel = new LigaLista();
         }
-        public LigaLista ViewModel { get; set; }
     }
 }

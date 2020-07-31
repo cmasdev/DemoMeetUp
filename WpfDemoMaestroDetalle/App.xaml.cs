@@ -10,7 +10,6 @@ namespace WpfDemoMaestroDetalle
     {
         public App()
         {
-            StyleManager.ApplicationTheme = new VisualStudio2019Theme();
             this.InitializeComponent();
         }
     }

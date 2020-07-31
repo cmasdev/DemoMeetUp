@@ -7,23 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.Resources>
-        <local:LigaLista x:Key="MyList" />
-        <Style TargetType="StackPanel">
-            <Setter Property="Margin" Value="10,0,10,0"/>
-        </Style>
-        <Style TargetType="ListBox">
-            <Setter Property="Height" Value="100"/>
-        </Style>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="12"/>
-        </Style>
-    </Page.Resources>
 
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+    <!--<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <ListView x:Name="ligasListView" ItemsSource="{x:Bind ViewModel}">
             <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:Liga">
+                <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="6">
                         <SymbolIcon Symbol="World" Margin="0,0,12,0"/>
                         <StackPanel>
@@ -33,33 +21,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <StackPanel Margin="0,24,0,0">
-            <ListView x:Name="divisionListView" ItemsSource="{Binding SelectedItem.Divisiones, ElementName=ligasListView}">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="local:Division">
-                        <StackPanel Orientation="Horizontal" Margin="6">
-                            <SymbolIcon Symbol="XboxOneConsole" Margin="0,0,12,0"/>
-                            <StackPanel>
-                                <TextBlock Text="{x:Bind Nombre}"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackPanel>
-        <StackPanel Margin="0,24,0,0">
-            <ListView ItemsSource="{Binding SelectedItem.Equipos, ElementName=divisionListView}">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="local:Equipo">
-                        <StackPanel Orientation="Horizontal" Margin="6">
-                            <SymbolIcon Symbol="Video" Margin="0,0,12,0"/>
-                            <StackPanel>
-                                <TextBlock Text="{x:Bind Nombre}"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackPanel>
-    </StackPanel>
+    </StackPanel>-->
 </Page>
